@@ -1,0 +1,171 @@
+*{    
+margin: 0;
+padding: 0;
+font-family: "JetBrains Mono";
+}
+
+header{
+
+    background-color: rgb(255, 165, 81);
+}
+
+.headerPosition{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.Blogname{
+    flex: 50%;
+    justify-content: center;
+    font-size: 50px;
+    
+}
+
+.logo{
+    flex: 30%;
+}
+
+footer{
+
+    background-color: rgb(255, 165, 81);
+}
+
+.container{
+    padding: 30px 10px;
+}
+
+.footerColuns{
+    display: flex;
+}
+
+.footerColun{
+    flex: 50%;
+    margin: 10px;
+}
+
+.footerColun h3, p, a{
+    font-size: 20px;
+}
+
+main{
+    padding: 10px;
+    background-color: rgb(255, 182, 113);
+}
+
+
+.post{
+
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    color: orangered;
+}
+
+
+.post img{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+#menu1{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+#menu1 ul{
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+#menu1 > ul::after{
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: " ";
+}
+
+#menu1 ul li{
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+/*Элементы основного списка навигационного меню*/
+#menu1 ul li a{
+    display: block;
+    padding: 9px 25px 0px 25px;
+    font-size: 20px;
+    line-height: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 36px;
+    
+}
+
+/*Стили для выпадающего списка навигационного меню*/
+#menu1 ul li ul{
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    display: none;
+    width: 200px;
+    background-color: rgb(255, 139, 30);
+}
+
+#menu1 ul li:hover ul{
+    display: block;
+}
+
+#menu1 ul li:hover{
+    background-color: rgb(255, 102, 0);
+}
+
+#menu1 ul li ul li{
+    float: none;
+    width: 100%;
+}  
+
+#menu1 ul li ul li a{
+    display: block;
+    text-transform: none;
+    height: auto;
+    padding: 7px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(182, 73, 0);
+    color: rgb(182, 73, 0);
+}
+
+#menu1 ul li ul li:first-child a{
+    border-top: 0px;
+}
+
+.carousele{
+    margin: 10px;
+}
+
+.carousele div img{
+    width: 40%;
+}
